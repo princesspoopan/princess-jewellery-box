@@ -1,1 +1,7 @@
-# princess-jewellery-box
+# PrincessJewelleryBox
+
+##WIP
+
+This project was generated with [Angular CLI]
+
+
