@@ -8,6 +8,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { BuyListComponent } from './buy-list/buy-list.component';
 import { SellListComponent } from './sell-list/sell-list.component';
 import { RouterModule, Routes } from '@angular/router';
+import { BuyItemsService } from './buy-list/buy-items.service'
 
 const appRoutes: Routes = [
   { path: 'buy', component: BuyListComponent },
@@ -26,7 +27,7 @@ const appRoutes: Routes = [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { useHash: true })
   ],
-  providers: [],
+  providers: [BuyItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
